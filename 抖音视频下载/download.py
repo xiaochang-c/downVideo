@@ -54,9 +54,9 @@ def download():
     with open('txt/names.txt', 'r') as f:
         names = f.readlines()
     # 下载地址
-    for i in range(0, 1):
-        print(names[i])
-        print(urls[i])
+    for i in range(0, len(urls)):
+        # print(names[i])
+        # print(urls[i])
         sys.argv = ['you-get', '-o', video_directory, '-O', names[i].strip(), urls[i]]
         you_get.main()
 
