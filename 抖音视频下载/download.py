@@ -126,7 +126,7 @@ def convert_video_rate():
 
 def merge_video():
     video_paths = get_video_info()
-    clips = [VideoFileClip(path) for path in video_paths[-2:]]
+    clips = [VideoFileClip(path) for path in video_paths]
     final_clip = concatenate_videoclips(clips)
     final_clip.write_videofile('output.mp4')
 
