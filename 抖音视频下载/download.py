@@ -29,7 +29,7 @@ create_directory(new_video_directory)
 create_directory(txt_directory)
 
 # 从文本中获取所有抖音合集视频的链接url
-with open('txt/output.txt', 'r') as f:
+with open('output.txt', 'r') as f:
     urls = f.readlines()[0].split(',')
 
 
